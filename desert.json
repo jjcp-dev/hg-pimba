@@ -1,0 +1,13 @@
+{
+ "columns":17,
+ "image":"houses-tiles.png",
+ "imageheight":512,
+ "imagewidth":544,
+ "margin":0,
+ "name":"desert",
+ "spacing":0,
+ "tilecount":272,
+ "tileheight":32,
+ "tilewidth":32,
+ "type":"tileset"
+}

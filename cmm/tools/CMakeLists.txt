@@ -1,0 +1,12 @@
+add_executable(jbdump
+    jbdump.cpp
+)
+target_compile_features(jbdump
+    PRIVATE
+        cxx_std_11
+)
+target_link_libraries(jbdump
+    PRIVATE
+        cmm
+        docopt_s
+)

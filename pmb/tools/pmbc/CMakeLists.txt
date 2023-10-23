@@ -1,0 +1,16 @@
+add_executable(pmbc
+    main.cpp
+    tiled.cpp
+    tileset_command.cpp
+)
+target_compile_features(pmbc
+    PRIVATE
+        cxx_std_11
+)
+target_link_libraries(pmbc
+    PRIVATE
+        cmm
+        pmb
+        docopt_s
+        nlohmann
+)

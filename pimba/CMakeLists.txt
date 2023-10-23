@@ -1,0 +1,22 @@
+project(pimba)
+
+add_executable(pimba
+    src/SDL2/main.cpp
+    src/SDL2/file_system.cpp
+)
+target_compile_features(pimba
+    PRIVATE
+        cxx_std_11
+)
+target_include_directories(pimba
+    PRIVATE
+        SDL2main
+        SDL2-static
+)
+target_link_libraries(pimba
+    PRIVATE
+        pmb
+        GSL
+        SDL2main
+        SDL2-static
+)
